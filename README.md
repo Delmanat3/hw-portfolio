@@ -18,5 +18,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Image of live site
 ![image](pictureofportfolio.png)
-    
 
+    
+file:///C:/Users/daved/Desktop/whygod/homework/hw-portfolio/index.html
+![image](https://user-images.githubusercontent.com/88867653/134265204-a1b29098-be0c-400a-85f2-92bd139aacfe.png)
