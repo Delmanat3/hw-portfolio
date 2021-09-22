@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+h4{
+    display: none;
+}
 
 .header{
     display: flex;
@@ -14,17 +17,29 @@
     
 
 }
-
-
-
-
-
+h3{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .lineone,.linetwo,.linethree {
     display: flex;
     padding: 28px;
+    flex-wrap: wrap;
     
 }
+header{
+  
+    background-color: #161B22;
+    font-family: fantasy;
+    padding-left: 10px;
+
+    
+}
+nav{
+    text-decoration: none;
+    display: flex;
+    }
 
 .links{
     
@@ -47,31 +62,38 @@
 
 .subtitle{
    color: antiquewhite;
-    font-size: 22px;
+    font-size: 33px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    position: relative;
-    bottom: 50px;
+    
+    bottom: 150px;
     padding-right: 10px;
 }
 
 main{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 
 }
+
 aside{
-    color: cadetblue;
+    color: pink;
     border-right: solid;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .aside{
     font-family: fantasy;
-    color: cadetblue;
+    color: pink;
     display: flex;
-   
-
+    flex-wrap: wrap;
+    min-width: 125.4px;
+    padding-top:20px;
     padding-right: 25px;
     font-size: 30px;
     
@@ -86,24 +108,31 @@ aside{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    border: solid;
-    color: grey;
+    border: dotted;
+    border-style:solid dotted solid dotted;
+    flex:50%;
+    color: pink;
     border-width: 3.5px;
-    width: 100%;
+
+    max-width: 878.8px;
+    max-height: 778.8px;
     margin-left: 190px;
     border-radius: 40px;
-    box-shadow: 7px 7px 7px gray;
+    box-shadow: 5px 5px 5px pink;
 }
 
 .workboxheader{
     display: flex;
-    height: 100px;
-    width: 100px;
+    flex-wrap: wrap;
+    max-height: 100px;
+    
     color:black;
+    justify-content: flex-start;
 }
 
 .cardsub{
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     color: cornsilk;
 }   
@@ -111,7 +140,8 @@ aside{
 figure{
     display: flex;
     flex-wrap: wrap;
-    border: solid;
+    border: double;
+    border-radius: 40px;
     transition: all .5s ease-in-out;
     padding: 15px;
     min-height: 300px;
@@ -121,38 +151,51 @@ figure{
     margin-top: 15px;
 }
 
-
+.linetwo{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .boxsy:hover{
-    border: solid;
+    border: dotted;
     border-color: rgb(58, 15, 15);
-    box-shadow: 5px 5px 10px brown;
-    transition: all .5s ease-in-out;
+    box-shadow: 5px 5px 7px brown;
+    transition: all .25s ease-in-out;
+    border-radius: 30px;
     
     
     
 
 }
-
+body{
+    background-color: #33393f;
+}
 .boxsy{
 
     height: 210px;
     width:265px;
     align-items: center;
     color: cyan;
-    border-color: dimgrey;
+    border-color: hotpink;
+    display: flex;
+    flex-wrap: wrap;
     
 }
-p{
-    display: flex;
+
+p1{
+    position: absolute;
     flex-wrap: wrap;
     justify-content:center ;
     padding-left: 190px;
     line-height: 3;
+    color: pink;
 }
 
 .contactinfo{
-display: flex;
+display: block;
+padding-left: 10px;
+color: pink;
+
 
 }
 footer{
@@ -166,14 +209,143 @@ footer{
 }
 
 a{
+    display: flex;
     text-decoration: none;
-}
+    flex-wrap: wrap;
+    padding: 7px;
+    color: blueviolet;
 
+}
+a:visited{
+    color: cornsilk;
+}
+p1:hover{
+    text-decoration: underline;
+    text-transform: capitalize;
+}
 a:hover{
-    color: beige;
+    color: hotpink;
     font-size: 1.3em;
 }
 
 figure:hover{
-    box-shadow: 7px 7px 7px 7px gray;
+    box-shadow: 7px 7px 7px 7px pink;
+    min-height: 320px;
+    max-width: 420px;
+}
+@media screen and (max-width: 1200px)
+{aside {
+    display: none; 
+    
+}
+}
+
+@media screen and (max-width:1200px){
+    p1 {
+       display: flex;
+       position: relative;;
+       right:200px;
+       padding-top: 20px;
+       flex-wrap: wrap;
+        margin: 10px;
+        justify-content: space-between;
+}}
+@media screen and (max-width: 1100px) 
+{ .links {
+   width: 20%;
+    
+}
+}
+@media screen and (max-width: 1200px) {
+    .h4{
+        z-index: 1;
+        
+        display: block;
+        position:absolute;
+    
+        font-size: 22px;
+        color: cadetblue;
+        border-bottom: solid;
+        
+    }
+}
+@media screen and (max-width: 1200px) 
+{ .workbox {
+   display: flex;
+   
+   position: relative;
+   padding: 10px;
+    
+    right: 200px;
+   flex-wrap: wrap;
+   flex-direction: column;
+    border: none;
+    box-shadow:none;
+   
+    
+
+}
+}
+@media screen and (max-width: 1100px) 
+{ .contactinfo {
+   display: flex;
+   position: relative;
+   
+  padding-top: 80px;
+   float: bottom;
+   flex-wrap: wrap;
+   flex-direction: column;
+    
+}
+
+@media screen and (max-width: 766px) 
+{ .links {
+   width: 30%;
+    
+}
+}
+
+
+@media screen and (max-width: 766px) 
+{ .workbox {
+   display: flex;
+   position: relative;
+  top: 50px;
+  
+    bottom: 150px;
+   right: 200px;
+   flex-wrap: wrap;
+   flex-direction: row;
+   border: none;
+    
+}
+}
+
+@media screen and (max-width: 766px) 
+{ .contactinfo {
+   display: flex;
+   position: relative;
+   float: bottom;
+   top: 600px;
+   flex-wrap: wrap;
+   flex-direction: column;
+    
+}
+}
+
+@media screen and (max-width: 766px) 
+{ footer {
+   display: flex;
+   position: relative;
+   top: 700px;
+   flex-wrap: wrap;
+   flex-direction: column;
+    
+}
+}
+
+
+
+
+
 }
